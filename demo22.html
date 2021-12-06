@@ -1,0 +1,21 @@
+<html>
+<head>
+</head>
+<body>
+<img src="a.jpg" height="200px" width="200px" id="im1"/>
+<img src="b.jpg" height="200px" width="200px" id="im2"/>
+<button onclick="demo()">click</button>
+<script>
+function demo()
+{
+var a=document.getElementById("im1")
+var b=document.getElementById("im2")
+var path1=a.src
+var path2=b.src
+a.src=path2
+b.src=path1
+}
+window.setInterval(demo,1000)
+</script>
+</body>
+</html>

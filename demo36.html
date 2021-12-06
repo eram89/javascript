@@ -1,0 +1,32 @@
+<html>
+<head>
+<style>
+img{
+height:400px;
+width:900px;
+border:10px solid purple;
+padding:10px;
+border-radius:5px;
+}
+</style>
+</head>
+<body>
+<center>
+<h1>Image slider</h1>
+<img src="a.jpg" id="img1"/>
+</center>
+<script>
+var arr=["a.jpg","b.jpg","c.jpeg","d.jpg","1.jpg"]
+var i=0
+function slider()
+{
+var im=document.getElementById("img1")
+im.src=arr[i]
+i++;
+if(i==arr.length)
+i=0;
+}
+window.setInterval(slider,1000)
+</script>
+</body>
+</html>

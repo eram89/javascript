@@ -1,0 +1,25 @@
+<html>
+<head>
+</head>
+<body>
+<input type="number" id="txt"/>
+<div id="dv"></div>
+<button onclick="demo()">Print Table</button>
+<script>
+function demo()
+{
+
+var num=Number(document.getElementById("txt").value);
+var dv=document.getElementById("dv")
+var res=""
+for(var i=1;i<=10;i++)
+{
+res+=num+"X"+i+"="+num*i+"</br>"
+dv.innerHTML=res;
+dv.style.background="red"
+dv.style.color="white"
+}
+}
+</script>
+</body>
+</html>

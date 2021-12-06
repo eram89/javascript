@@ -1,0 +1,28 @@
+<html>
+<head>
+</head>
+<body>
+<img src="1.jpg" height="200px" id="img1"/>
+<img src="a.jpg" height="200px" id="img2"/>
+<img src="b.jpg" height="200px" id="img3"/>
+<img src="d.jpg" height="200px" id="img4"/>
+<script>
+function demo()
+{
+var im1=document.getElementById("img1")
+var im2=document.getElementById("img2")
+var im3=document.getElementById("img3")
+var im4=document.getElementById("img4")
+var path1=im1.src
+var path2=im2.src
+var path3=im3.src
+var path4=im4.src
+im1.src=path2;
+im2.src=path1;
+im3.src=path4;
+im4.src=path3;
+}
+window.setInterval(demo,1000)
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+<head>
+</head>
+<body>
+<input type="number" id="t1"/>
+<input type="number" id="t2"/>
+<input type="number" id="t3"/>
+<button onclick="demo()">click</button>
+<script>
+function demo()
+{
+var a=document.getElementById("t1").value
+var b=document.getElementById("t2").value
+var c=document.getElementById("t3")
+var res=parseInt(a)+parseInt(b)
+if((a==20)||(b==20)||(res==20))
+{
+c.value=res
+}
+else{
+var re=parseInt(a)*parseInt(b)
+c.value=re
+}
+}
+</script>
+</body>
+</html>

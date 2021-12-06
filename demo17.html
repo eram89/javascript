@@ -1,0 +1,20 @@
+<html>
+<head>
+</head>
+<body>
+<img src="1.jpg" height="200px" id="img1"/>
+<img src="a.jpg" height="200px" id="img2"/>
+<button onclick="demo()">Print Image Path</button>
+<script>
+function demo()
+{
+var im1=document.getElementById("img1")
+var im2=document.getElementById("img2")
+var path1=im1.src
+var path2=im2.src
+im1.src=path2;
+im2.src=path1;
+}
+</script>
+</body>
+</html>

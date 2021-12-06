@@ -1,0 +1,58 @@
+<html>
+<head>
+<style>
+body{
+background:white;
+}
+#outer{
+height:300px;
+width:900px;
+margin:200px auto;
+}
+.col{
+height:300px;
+width:300px;
+background:aqua;
+border:30px solid black;
+
+box-sizing:border-box;
+float:left;
+font-size:90px;
+text-align:center;
+line-height:250px;
+color:black;
+font-family:impact;
+
+}
+</style>
+</head>
+<body onload="setInterval(demo,1000)">
+<div id="outer">
+<div  id="h" class="col">HH</div>
+<div  id="m" class="col">MM</div>
+<div  id="s" class="col">SS</div>
+</div>
+</body>
+<script>
+function demo()
+{
+var h=document.getElementById("h")
+var m=document.getElementById("m")
+var s=document.getElementById("s")
+var x=new Date()
+status="AM"
+var hh=x.getHours()
+var mm=x.getMinutes()
+var ss=x.getSeconds()
+if(hh>12)
+{
+hh=hh-12
+status="PM"
+}
+s.innerText=x.getSeconds()
+m.innerText=x.getMinutes()
+h.innerText=x.getHours()
+}
+
+</script>
+</html>

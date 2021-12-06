@@ -1,0 +1,27 @@
+<html>
+<head>
+</head>
+<body>
+<input type="text" id="t1"/>
+<input type="text" id="t2"/>
+<button onclick="demo()">click</button>
+<script>
+function demo()
+{
+var a=document.getElementById("t1").value
+var b=document.getElementById("t2").value
+var res=parseInt(a)+parseInt(b);
+var c=confirm("are you sure you want to exit..")
+if(c==true)
+{
+document.write(res)
+}
+else
+{
+//var res=parseInt(a)-parseInt(b);
+document.write(res)
+}
+}
+</script>
+</body>
+</html>

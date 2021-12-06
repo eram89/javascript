@@ -1,0 +1,91 @@
+<html>
+<head>
+<style>
+#outer
+{
+height:700px;
+width:1200px;
+border:1px solid black;
+margin:0px auto;
+}
+.row
+{
+height:350px;
+width:1200px;
+background:#cce8ff+;
+}
+.col
+{
+height:300px;
+width:350px;
+float:left;
+background:purple;
+margin:25px;
+}
+.col img{
+height:100%;
+width:100%;
+}
+#modal
+{
+height:900px;
+width:100%;
+background:rgba(0,0,0,.5);
+position:fixed;
+top:0px;
+display:none;
+
+}
+#inner{
+min-height:500px;
+width:700px;
+background:white;
+border-radius:5px;
+margin:100px auto;
+padding:25px;
+box-sizing:border-box;
+}
+#inner img{
+height:50%;
+width:100%;
+}
+</style>
+</head>
+<body>
+<center><h1>Image Gallery</h1></center>
+<div id="outer">
+<div class="row">
+<div class="col">
+<img src="a.jpg" onclick="demo(this)"/>
+</div>
+<div class="col"><img src="b.jpg" onclick="demo(this)" /></div>
+<div class="col"><img src="1.jpg"onclick="demo(this)"/></div>
+</div>
+<div class="row">
+<div class="col"><img src="c.jpeg" onclick="demo(this)"/></div>
+<div class="col"><img src="d.jpg" onclick="demo(this)"/></div>
+<div class="col"><img src="2.jpg" onclick="demo(this)"/></div>
+</div>
+</div>
+<!-------start modal--->
+<div id="modal">
+<div id="inner"><center>
+<h2>Image Gallery
+<a href="demo30.html" style="font-size:30px;color:red;float:right;">X</a>
+</h2>
+</center>
+<img src="a.jpg" id="modalimg"/>
+</div>
+</div>
+<!-------end modal--->
+<script>
+function demo(x)
+{
+var m=document.getElementById("modal")
+var mimg=document.getElementById("modalimg")
+m.style.display="block"
+mimg.src=x.src
+}
+</script>
+</body>
+</html>

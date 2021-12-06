@@ -1,0 +1,33 @@
+<html>
+<head>
+</head>
+<body>
+<input type="password" id="txt"/>
+<input type="button" onclick="demo()" value="Show password" id="btn"/><br>
+
+<script>
+function demo()
+{
+var t=document.getElementById("txt")
+var b=document.getElementById("btn")
+if(b.value=="Show password")
+{
+b.value="Hide password"
+t.type="text"
+b.style.background="maroon"
+b.style.color="white"
+b.style.border="none"
+}
+else
+{
+b.value="Show password"
+t.type="text"
+b.style.background="green"
+b.style.color="white"
+t.type="password"
+b.style.border="none"
+}
+}
+</script>
+</body>
+</html>
